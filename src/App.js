@@ -28,8 +28,11 @@ class App extends React.Component {
             callback={responseFacebook}
 
         />
-          <h2>{responseFacebook}</h2>
+          <div>
+              <h2>{responseFacebook}</h2>
+          </div>
       </div>
+
     );
   }
 }
