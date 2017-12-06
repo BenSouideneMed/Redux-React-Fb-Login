@@ -9,6 +9,7 @@ class App extends React.Component {
 
       const responseFacebook = (response) => {
           console.log(response);
+          console.log(response.name);
           return(response.name)
       }
       const componentClicked = () => {
