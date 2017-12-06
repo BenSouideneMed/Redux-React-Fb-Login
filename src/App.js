@@ -19,6 +19,7 @@ class App extends React.Component {
         <FacebookLogin
             appId="163127807768015"
             autoLoad={true}
+            disableMobileRedirect={true}
             fields="name,email,picture.width(800).height(800)"
             scope="public_profile"
             onClick={componentClicked}
