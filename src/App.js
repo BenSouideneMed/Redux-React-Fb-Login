@@ -9,6 +9,7 @@ class App extends React.Component {
 
       const responseFacebook = (response) => {
           console.log(response);
+          return(response.name)
       }
       const componentClicked = () => {
           console.log("clicked");
@@ -26,6 +27,7 @@ class App extends React.Component {
             callback={responseFacebook}
 
         />
+          <h2>{responseFacebook}</h2>
       </div>
     );
   }
