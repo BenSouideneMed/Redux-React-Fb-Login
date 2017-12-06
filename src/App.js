@@ -20,6 +20,7 @@ class App extends React.Component {
             appId="163127807768015"
             autoLoad={true}
             fields="name,email,picture"
+            scope="public_profile"
             onClick={componentClicked}
             callback={responseFacebook} />
       </div>
