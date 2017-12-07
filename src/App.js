@@ -10,8 +10,12 @@ class App extends React.Component {
       const responseFacebook = (response) => {
           console.log(response);
           console.log(response.name);
-          return(response.name)
+          return (<div>{response.name}</div>)
       }
+
+
+
+
       const componentClicked = () => {
           console.log("clicked");
       }
@@ -30,7 +34,7 @@ class App extends React.Component {
         />
           <div>
               <h2>your name is : </h2>
-              <h2>{responseFacebook.toString()}</h2>
+              <h2>{responseFacebook}</h2>
           </div>
       </div>
 
