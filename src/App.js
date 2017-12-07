@@ -29,7 +29,8 @@ class App extends React.Component {
 
         />
           <div>
-              <h2>{responseFacebook}</h2>
+              <h2>your name is : </h2>
+              <h2>{responseFacebook.toString()}</h2>
           </div>
       </div>
 
