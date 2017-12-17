@@ -26,7 +26,8 @@ class LoginPage extends React.Component {
             //console.log(response);
             //dispatch setUserData action to the store
             //if response status undefined return error
-            response.status ? this.props.setUserData(response): console.log("Error : facebook response undefined");
+            //response.status ? this.props.setUserData(response): console.log("Error : facebook response undefined");
+            this.props.setUserData(response)
 
         }
 
