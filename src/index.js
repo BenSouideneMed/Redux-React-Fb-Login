@@ -7,6 +7,9 @@ import registerServiceWorker from './registerServiceWorker';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
+/*
+    MuiThemeProvider to inject the theme into the application context
+ */
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 //create the store

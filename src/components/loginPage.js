@@ -7,6 +7,7 @@ import {setUserData} from "../actions/actions";
 //paper element from materiel ui
 import Paper from 'material-ui/Paper';
 
+//login page style
 const style = {
     padding: 20,
     width: '98%',
@@ -24,7 +25,8 @@ class LoginPage extends React.Component {
         const responseFacebook = (response) => {
             //console.log(response);
             //dispatch setUserData action to the store
-            response ? this.props.setUserData(response): console.log("extern erreur");
+            //if response status undefined return error
+            response.status ? this.props.setUserData(response): console.log("Error : facebook response undefined");
 
         }
 
@@ -66,7 +68,7 @@ class LoginPage extends React.Component {
     store functions map the state and actions to this component LoginPAge
  */
 const mapStateToProps = (state) => {
-    console.log(state);
+    //console.log(state);
     return {
         user : state.userData.user,
     };

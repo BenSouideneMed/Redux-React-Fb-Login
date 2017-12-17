@@ -41,6 +41,7 @@ class Profile extends React.Component {
                 </div>
             );
         }else{
+            //waiting for user information
             return(
                 <div>
                     <h6>Login to see your profile</h6>

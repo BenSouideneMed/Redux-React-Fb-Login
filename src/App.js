@@ -5,6 +5,8 @@
 import React from 'react';
 import LoginPage from './components/loginPage';
 import Profile from './components/profile';
+
+//AppBar from Ui-material to display app title
 import AppBar from 'material-ui/AppBar';
 
 const style = {
@@ -18,7 +20,7 @@ class App extends React.Component {
        return (
             <div>
                 <center>
-                    <AppBar style={style} title ="Welcome to Twin Minds" zDepth={3}  showMenuIconButton={false} />
+                    <AppBar style={style} title ="Welcome Redux React Fb Login" zDepth={3}  showMenuIconButton={false} />
                     <LoginPage/>
                     <Profile/>
                 </center>
